@@ -1,3 +1,4 @@
+require('dotenv').config()
 var aws = require('aws-sdk');
 var rekognition = new aws.Rekognition();
 

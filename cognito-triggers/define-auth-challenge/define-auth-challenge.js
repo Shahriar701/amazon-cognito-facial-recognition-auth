@@ -1,4 +1,4 @@
-
+require('dotenv').config()
 exports.handler = async (event, context) => {
 
     console.log("Define Auth Challenge: " + JSON.stringify(event));

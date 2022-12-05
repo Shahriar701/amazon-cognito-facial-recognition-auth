@@ -1,6 +1,6 @@
+require('dotenv').config()
 const aws = require('aws-sdk');
 const dynamodb = new aws.DynamoDB.DocumentClient();
-
 exports.handler = async (event, context) => {
 
     console.log("Create auth challenge: " + JSON.stringify(event));

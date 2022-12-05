@@ -11,7 +11,8 @@
   "license": "MIT",
   "dependencies": {
     "aws-sdk": "^2.814.0",
-    "crypto-secure-random-digit": "^1.0.7"
+    "crypto-secure-random-digit": "^1.0.7",
+    "dotenv": "^16.0.3"
   },
   "devDependencies": {}
 }
