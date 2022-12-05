@@ -2,7 +2,7 @@
   "name": "cognito-facial-rekognition-auth-backend",
   "version": "1.0.0",
   "scripts": {
-    "package": "sam package --template-file template.yml --output-template-file package.yml --s3-bucket recog-bucket-reddot",
+    "package": "sam package --template-file template.yml --output-template-file package.yml --s3-bucket reddot-recog-bucket",
     "deploy": "sam deploy --template-file package.yml --capabilities CAPABILITY_IAM --stack-name reddot-attendance-stack --parameter-overrides CollectionName=reddot-attendance-collection UserPoolName=reddot-user-pool DocumentUploadBucketName=reddot-attendance-sign-up SignInUploadBucketName=reddot-attendance-sign-in",
     "check-env": "if [ -e ${S3_BUCKET_NAME} ] || [ -e ${USER_POOL_NAME} ] || [ -e ${STACK_NAME} ] || [ -e ${SES_FROM_ADDRESS} ]; then exit 1; fi",
     "bd": "npm run package && npm run deploy"
