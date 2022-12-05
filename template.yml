@@ -17,7 +17,6 @@ Metadata:
     SemanticVersion: 1.0.2
     SourceCodeUrl: https://github.com/aws-samples/amazon-cognito-facial-recognition-auth/tree/master/
 
-
 Parameters:
   UserPoolName:
     Type: String
@@ -105,7 +104,6 @@ Resources:
                 - rekognition:SearchFacesByImage
               Resource: "*"
       
-
   PreSignUp:
     Type: AWS::Serverless::Function
     Properties:
