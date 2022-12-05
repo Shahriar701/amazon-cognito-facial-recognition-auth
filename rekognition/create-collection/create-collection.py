@@ -2,7 +2,7 @@ import boto3
 import os
 import json
 import logging
-from botocore.vendored import requests
+import requests
 
 LOGGER = logging.getLogger()
 LOGGER.setLevel(logging.INFO)
